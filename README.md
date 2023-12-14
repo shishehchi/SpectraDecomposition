@@ -9,3 +9,5 @@ ecent advancements in galaxy research, particularly through Integral Field Unit 
 # The deep decomposition model
 Our Deep Decomposition Model (DDM) consists of a model with five regressors, each with its own loss function (i.e., five outputs). A detailed information of the
 structure of the model is below:
+
+<img src="images/model_architecture.png" width="100%">
