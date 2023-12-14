@@ -115,7 +115,7 @@ def Model_class(reg=.00,use_bias=False):
     
     model = Model(input_img, [output_sf,output_agn,output_norm,output_norm_agn,dadded_sf])   
     model.compile(loss=['mse','mse','mse','mse','mse'],  metrics=['mse'],loss_weights=[1,1,1,1,1])
-    model.load_weights('/weights/WeightCLSm_NFSP_TO_ONE8.hdf5')
+    model.load_weights('/Weights/WeightCLSm_NFSP_TO_ONE8.hdf5')
 
     
     return model
