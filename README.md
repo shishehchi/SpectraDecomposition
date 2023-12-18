@@ -1,6 +1,7 @@
 # Spectra Decomposition
 Dissection of composite spectra of galaxies into individual components using deep supervised learning techniques.
 
+[![DOI](https://zenodo.org/badge/731416625.svg)](https://zenodo.org/doi/10.5281/zenodo.10398092)
 
 # Summary
 
