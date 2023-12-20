@@ -13,13 +13,15 @@ In this study, we introduce a novel model informed by insights from the MaNGA IF
 
 To test our trained model, please download the [classifier](https://drive.google.com/file/d/1WdXHMr5N4mIm4e435TnUKLANLceMVxMw/view?usp=sharing) and [regressor](https://drive.google.com/file/d/1F-JMK59GhILmNt_PkEErw1BF63Nd_3yZ/view?usp=sharing) model weights and save them in the "weights" folder. Download the [wavelength](https://drive.google.com/file/d/1Amk7qBBVBZDxKTy3KZar4OglYndmnuMg/view?usp=sharing) data and save them in the "data" folder. Then use the piplene.ipynb file to test the model on your data. Input data to the model must be prepared considering the following requirements:
 
-Provide one file that contains the input spectra as follows. Save the file as data/input.npy
+Provide one file that contains the input spectra as follows. Save the file in the data folder.
 
 1- Input spectra must be resampled to 2A wavelength bins between 3700 A and 8114 A. Therefore, each input spectra must have 2208 elements.
   
 2- All the major emission lines (Ha, Hb, O3, N2 and S2) need to have signal-to-noise ratio values greater than 8.
   
-Provide one file that contains the corresponding weight of each spectra. Save it as data/weights.npy
+Provide one file that contains the corresponding weight of each spectra. Save it in the data folder.
+
+Alternatively, you can test the code with our data sample that you can download [here](https://drive.google.com/file/d/1NMtspP9GkSTI1vZDHN1uvqzq52UX175G/view?usp=sharing). Please unzip the file and add the two .npy files to the data folder.
 
 We normalize each MaNGA spectra by first subtracting the median value of the spectra between data points 4000 A and 7000 A, which covers the four emission lines required for placement on a BPT diagram. Then, by dividing it to the fiber mass and the standrad deviation of the spectra between data points 4000 A and 7000 A.
   
