@@ -21,7 +21,7 @@ Provide one file that contains the input spectra as follows. Save the file as da
   
 Provide one file that contains the corresponding weight of each spectra. Save it as data/weights.npy
 
-We normalize each MaNGA spectra by subtracting the median value between 4000 A and 7000 A, which covers the four emission lines required for placement on a BPT diagram.
+We normalize each MaNGA spectra by first subtracting the median value between 4000 A and 7000 A, which covers the four emission lines required for placement on a BPT diagram. Then, by dividing it to the fiber mass and the standrad deviation of the spectra between 4000 A and 7000 A.
   
 
 
