@@ -5,9 +5,9 @@ Dissection of composite spectra of galaxies into individual components using dee
 
 # Summary
 
-Recent advancements in galaxy research, particularly through Integral Field Unit (IFU) surveys like MaNGA, have significantly deepened our understanding of the diverse stellar populations and physical processes within galaxies. While these surveys provide more precise measurements of key parameters, their limited scope of IFU surveys restricts their broader application. In contrast, single-slit spectroscopic surveys like SDSS, which offer an averaged view by capturing integrated light from galaxies, face difficulties in accurately extracting specific details due to the overlapping contributions from different regions. 
+Traditional single-slit spectroscopy yields a single composite spectrum that encapsulates the intricate internal structures and activities within a galaxy. These spectra serve as the foundation for estimating crucial galaxy parameters, but their accuracy can be compromised by various contributing sources. In contrast, Integral Field Unit (IFU) surveys minimize the effects of mixing different sources by examining spatially localized regions within a galaxy. Nevertheless, they often exhibit limitations concerning the diversity and number of galaxies covered, typically focusing on nearby galactic systems.
 
-To bridge such gaps, we have considered an innovative two-component scenario in which a model decomposes SDSS spectra into Active Galactic Nuclei (AGN) and Star-Forming (SF) components, utilizing MaNGA spectra for training. This approach, which leverages deep supervised learning techniques trained on IFU survey data, enables the dissection of composite spectra into individual components, providing a clearer quantification of each population’s contribution. Our results show that removing star-forming ’contamination’ from AGN galaxies can position the galaxies to a more limited area on BPT diagrams.
+In this study, we introduce a novel model informed by insights from the MaNGA IFU survey. This model allows us to deconstruct galaxy spectra, including those sourced from the Sloan Digital Sky Survey (SDSS), into their SF and AGN constituents. Application of our model to these survey datasets yields two distinct spectra—one for SF and another for AGN components—while maintaining empirical flux conservation across wavelength bins.
 
 # This Repository
 
@@ -26,7 +26,6 @@ We normalize each MaNGA spectra by subtracting the median value between 4000 A a
 
 
 # The deep decomposition model
-Our Deep Decomposition Model (DDM) consists of a model with five regressors, each with its own loss function (i.e., five outputs). A detailed information of the
-structure of the model is below:
+Our Deep Decomposition Model (DDM) consists of a model with five regressors, each with its own loss function. A detailed information of the structure of the model is below:
 
 <img src="images/model_architecture.png" width="100%">
