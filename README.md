@@ -11,7 +11,7 @@ In this study, we introduce a novel model informed by insights from the MaNGA IF
 
 # This Repository
 
-To test our trained model, please download the model weights and save it in the "Weights" folder. Then use the piplene.ipynb file to test the model on your data. Input data to the model must be prepared considering the following requirements:
+To test our trained model, please download the [classifier](https://drive.google.com/file/d/1WdXHMr5N4mIm4e435TnUKLANLceMVxMw/view?usp=sharing) and [regressor](https://drive.google.com/file/d/1F-JMK59GhILmNt_PkEErw1BF63Nd_3yZ/view?usp=sharing) model weights and save them in the "weights" folder. Then use the piplene.ipynb file to test the model on your data. Input data to the model must be prepared considering the following requirements:
 
 Provide one file that contains the input spectra as follows. Save the file as data/input.npy
 
