@@ -5,9 +5,10 @@ Dissection of composite spectra of galaxies into individual components using dee
 
 # Summary
 
-Traditional single-slit spectroscopy yields a single composite spectrum that encapsulates the intricate internal structures and activities within a galaxy. These spectra serve as the foundation for estimating crucial galaxy parameters, but their accuracy can be compromised by various contributing sources. In contrast, Integral Field Unit (IFU) surveys minimize the effects of mixing different sources by examining spatially localized regions within a galaxy. Nevertheless, they often exhibit limitations concerning the diversity and number of galaxies covered, typically focusing on nearby galactic systems.
+Galaxies are vast and intricate systems that host diverse regions with different stellar populations and characteristics. With the emergence of IFU surveys such as MaNGA, astronomers can now study these regions in more detail since such surveys offer more precise measurements of critical physical parameters. However, IFU surveys mainly target specific galaxies in the local Universe, which may limit their generalizability. In contrast, single-slit spectroscopic surveys like SDSS capture integrated light from various populations, providing an average physical property of the galaxy. For instance, extracting the SFR or metallicity of galaxies from integrated spectra can be challenging due to the mixture of contributions from different region
 
-In this study, we introduce a novel model informed by insights from the MaNGA IFU survey. This model allows us to deconstruct galaxy spectra, including those sourced from the Sloan Digital Sky Survey (SDSS), into their SF and AGN constituents. Application of our model to these survey datasets yields two distinct spectra—one for SF and another for AGN components—while maintaining empirical flux conservation across wavelength bins.
+In order to overcome the challenges of understanding the complex nature of galaxies and their underlying physical processes, we have developed a method to decompose SDSS spectra into two distinct components: Active Galactic Nuclei (AGN) and Star-Forming (SF) populations. To demonstrate this approach, we have used MaNGA spectra as a training set. Our method involves applying deep supervised learning techniques, trained on IFU surveys, to decompose a single composite spectrum into two separate spectra and to determine the contribution of each population.
+
 
 # This Repository
 
